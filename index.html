@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <!--  дз00,02-->
+    <!--  дз14,38-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/normalize.css" />  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -34,32 +33,28 @@
           >
           <nav>
             <ul class="nav-list">
-              <li>
+              <li class="contacts-menu-link">
                 <a href="./index.html" class="contacts-link active-page"
                   >Студия</a
                 >
               </li>
-              <li>
+              <li class="contacts-menu-link">
                 <a href="./portfolio.html" class="contacts-link">Портфолио</a>
               </li>
-              <li>
+              <li class="contacts-menu-link">
                 <a href="#contacts" class="contacts-link">Контакты</a>
               </li>
             </ul>
           </nav>
 
           <ul class="header-contacts">
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="contacts-link-header contacts-link-header-email"
+            <li class="header-contacts-menu">
+              <a href="mailto:info@devstudio.com" class="contacts-link-header"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a
-                href="tel:+380961111111"
-                class="contacts-link-header contacts-link-header-tel"
+            <li class="header-contacts-menu">
+              <a href="tel:+380961111111" class="contacts-link-header"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -68,16 +63,20 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <h1 class="hero-title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
+      <section class="section hero">
+        <div class="container">
+          <h1 class="hero-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
 
-        <button class="button" type="button">Заказать услугу</button>
+          <button class="button" type="button">Заказать услугу</button>
+        </div>
       </section>
+
       <!--benefits особенности-->
-      <section class="benefits">
+
+      <section class="section">
         <div class="container">
           <!-- заголовок h2 буде скритий -->
           <h2 class="benefits-hiden">заголовок секции</h2>
@@ -107,7 +106,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="benefits-item-last">
+            <li class="benefits-item">
               <h3 class="benefits-title">Современные технологии</h3>
               <p class="benefits-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -118,7 +117,7 @@
         </div>
       </section>
 
-      <section class="our-job">
+      <section class="section our-job">
         <div class="container">
           <h2 class="our-job-title">Чем мы занимаемся</h2>
           <ul class="our-job-list">
@@ -153,7 +152,7 @@
         </div>
       </section>
 
-      <section class="our-team">
+      <section class="section our-team">
         <div class="container">
           <h2 class="our-team-title">Наша команда</h2>
           <ul class="our-team-list">
@@ -164,8 +163,10 @@
                 height="260"
                 alt="Игорь Демьяненко"
               />
-              <h3 class="our-team-subtitle">Игорь Демьяненко</h3>
-              <p class="our-team-text">Product Designer</p>
+              <div class="our-team-subtitle-text-block">
+                <h3 class="our-team-subtitle">Игорь Демьяненко</h3>
+                <p class="our-team-text">Product Designer</p>
+              </div>
             </li>
             <li class="our-team-item">
               <img
@@ -174,8 +175,10 @@
                 height="260"
                 alt="Ольга Репина"
               />
-              <h3 class="our-team-subtitle">Ольга Репина</h3>
-              <p class="our-team-text">Frontend Developer</p>
+              <div class="our-team-subtitle-text-block">
+                <h3 class="our-team-subtitle">Ольга Репина</h3>
+                <p class="our-team-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="our-team-item">
               <img
@@ -184,18 +187,23 @@
                 height="260"
                 alt="Николай Тарасов"
               />
-              <h3 class="our-team-subtitle">Николай Тарасов</h3>
-              <p class="our-team-text">Marketing</p>
+              <div class="our-team-subtitle-text-block">
+                <h3 class="our-team-subtitle">Николай Тарасов</h3>
+                <p class="our-team-text">Marketing</p>
+              </div>
             </li>
-            <li class="our-team-item-last">
+            <li class="our-team-item">
               <img
                 src="./images/mihail.jpg"
                 width="270"
                 height="260"
                 alt="Михаил Ермаков"
               />
-              <h3 class="our-team-subtitle">Михаил Ермаков</h3>
-              <p class="our-team-text">UI Designer</p>
+
+              <div class="our-team-subtitle-text-block">
+                <h3 class="our-team-subtitle">Михаил Ермаков</h3>
+                <p class="our-team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -204,19 +212,19 @@
 
     <footer class="footer">
       <div class="container">
-        <address>
-          <a href="./index.html" class="footer-logo"
-            ><span class="logo-style">Web</span>Studio</a
-          >
+        <a href="./index.html" class="footer-logo"
+          ><span class="logo-style">Web</span>Studio</a
+        >
 
+        <address class="footer-address">
           <ul id="contacts" class="address">
             <li class="post-adress">г. Киев, пр-т Леси Украинки, 26</li>
-            <li>
+            <li class="post-adress">
               <a href="mailto:info@devstudio.com" class="address-mail"
                 >info@devstudio.com
               </a>
             </li>
-            <li>
+            <li class="post-adress">
               <a href="tel:+380961111111" class="address-tel"
                 >+38 096 111 11 11</a
               >

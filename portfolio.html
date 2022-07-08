@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <!--  дз00,02-->
+    <!--  дз14,38-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/normalize.css" />  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -27,39 +26,35 @@
   <body>
     <!--описание логотипа-->
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <div class="flex-container">
           <a href="./index.html" class="logo"
             ><span class="logo-style">Web</span>Studio</a
           >
           <nav>
             <ul class="nav-list">
-              <li>
-                <a href="./index.html" class="contacts-link active-page"
-                  >Студия</a
+              <li class="contacts-menu-link">
+                <a href="./index.html" class="contacts-link">Студия</a>
+              </li>
+              <li class="contacts-menu-link">
+                <a href="./portfolio.html" class="contacts-link active-page"
+                  >Портфолио</a
                 >
               </li>
-              <li>
-                <a href="./portfolio.html" class="contacts-link">Портфолио</a>
-              </li>
-              <li>
+              <li class="contacts-menu-link">
                 <a href="#contacts" class="contacts-link">Контакты</a>
               </li>
             </ul>
           </nav>
 
           <ul class="header-contacts">
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="contacts-link-header contacts-link-header-email"
+            <li class="header-contacts-menu">
+              <a href="mailto:info@devstudio.com" class="contacts-link-header"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a
-                href="tel:+380961111111"
-                class="contacts-link-header contacts-link-header-tel"
+            <li class="header-contacts-menu">
+              <a href="tel:+380961111111" class="contacts-link-header"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -68,71 +63,91 @@
       </div>
     </header>
     <main>
-      <section class="section-portfolio">
+      <section class="section section-portfolio">
         <div class="container">
           <!--/* прихований заголовок */ -->
           <h1 class="title-hiden">прихований заголовок</h1>
           <!--список кнопок фильтра-->
           <ul class="button-list">
-            <li>
+            <li class="btn">
               <button type="button" class="filter-button">Все</button>
             </li>
-            <li>
+            <li class="btn">
               <button type="button" class="filter-button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="btn">
               <button type="button" class="filter-button">Приложения</button>
             </li>
-            <li><button type="button" class="filter-button">Дизайн</button></li>
-            <li>
+            <li class="btn">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li class="btn">
               <button type="button" class="filter-button">Маркетинг</button>
             </li>
           </ul>
           <ul class="portfolio-list">
             <li class="cards">
               <img src="./images/portfolio1.jpg" alt="Веб-сайт" width="370" />
-              <h2 class="pf-title">Технокряк</h2>
-              <p class="pf-text">Веб-сайт</p>
+              <div class="title-text">
+                <h2 class="pf-title">Технокряк</h2>
+                <p class="pf-text">Веб-сайт</p>
+              </div>
             </li>
             <li class="cards">
               <img src="./images/portfolio2.jpg" alt="Дизайн" width="370" />
-              <h2 class="pf-title">Постер New Orlean vs Golden Star</h2>
-              <p class="pf-text">Дизайн</p>
+              <div class="title-text">
+                <h2 class="pf-title">Постер New Orlean vs Golden Star</h2>
+                <p class="pf-text">Дизайн</p>
+              </div>
             </li>
             <li class="cards">
               <img src="./images/portfolio3.jpg" alt="Приложение" width="370" />
-              <h2 class="pf-title">Ресторан Seafood</h2>
-              <p class="pf-text">Приложение</p>
+              <div class="title-text">
+                <h2 class="pf-title">Ресторан Seafood</h2>
+                <p class="pf-text">Приложение</p>
+              </div>
             </li>
             <li class="cards">
               <img src="./images/portfolio4.jpg" alt="Маркетинг" width="370" />
-              <h2 class="pf-title">Проект Prime</h2>
-              <p class="pf-text">Маркетинг</p>
+              <div class="title-text">
+                <h2 class="pf-title">Проект Prime</h2>
+                <p class="pf-text">Маркетинг</p>
+              </div>
             </li>
             <li class="cards">
               <img src="./images/portfolio5.jpg" alt="Приложение" width="370" />
-              <h2 class="pf-title">Проект Boxes</h2>
-              <p class="pf-text">Приложение</p>
+              <div class="title-text">
+                <h2 class="pf-title">Проект Boxes</h2>
+                <p class="pf-text">Приложение</p>
+              </div>
             </li>
             <li class="cards">
               <img src="./images/portfolio6.jpg" alt="Веб-сайт" width="370" />
-              <h2 class="pf-title">Inspiration has no Borders</h2>
-              <p class="pf-text">Веб-сайт</p>
+              <div class="title-text">
+                <h2 class="pf-title">Inspiration has no Borders</h2>
+                <p class="pf-text">Веб-сайт</p>
+              </div>
             </li>
             <li class="cards">
               <img src="./images/portfolio7.jpg" alt="Дизайн" width="370" />
-              <h2 class="pf-title">Издание Limited Edition</h2>
-              <p class="pf-text">Дизайн</p>
+              <div class="title-text">
+                <h2 class="pf-title">Издание Limited Edition</h2>
+                <p class="pf-text">Дизайн</p>
+              </div>
             </li>
             <li class="cards">
               <img src="./images/portfolio8.jpg" alt="Маркетинг" width="370" />
-              <h2 class="pf-title">Проект LAB</h2>
-              <p class="pf-text">Маркетинг</p>
+              <div class="title-text">
+                <h2 class="pf-title">Проект LAB</h2>
+                <p class="pf-text">Маркетинг</p>
+              </div>
             </li>
             <li class="cards">
               <img src="./images/portfolio9.jpg" alt="Приложение" width="370" />
-              <h2 class="pf-title">Growing Business</h2>
-              <p class="pf-text">Приложение</p>
+              <div class="title-text">
+                <h2 class="pf-title">Growing Business</h2>
+                <p class="pf-text">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -140,19 +155,19 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <address>
-          <a href="./index.html" class="footer-logo"
-            ><span class="logo-style">Web</span>Studio</a
-          >
+        <a href="./index.html" class="footer-logo"
+          ><span class="logo-style">Web</span>Studio</a
+        >
 
+        <address class="footer-address">
           <ul id="contacts" class="address">
             <li class="post-adress">г. Киев, пр-т Леси Украинки, 26</li>
-            <li>
+            <li class="post-adress">
               <a href="mailto:info@devstudio.com" class="address-mail"
                 >info@devstudio.com
               </a>
             </li>
-            <li>
+            <li class="post-adress">
               <a href="tel:+380961111111" class="address-tel"
                 >+38 096 111 11 11</a
               >
